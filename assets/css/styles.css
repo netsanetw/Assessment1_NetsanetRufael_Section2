@@ -1,100 +1,89 @@
-/* General Styles */
-img {
-    max-width: 100%; /* Allow images to be responsive */
-    height: auto; /* Maintain aspect ratio */
+img{
+    max-width:300px;
+    max-height: 400px;
     border-radius: 8px;
-}
-
-body {
+    }
+    body {
     font-family: sans-serif;
     margin: 0;
     display: flex;
     flex-direction: column; /* Stack sections vertically */
-}
-
-ul {
+    }
+    ul{
     list-style: none;
-    display: flex;
+    display:flex;
     justify-content: center;
-    padding: 0;
-}
-
-ul .links {
-    margin: 0 10px; /* Reduced margin for smaller screens */
+    padding: 0px;
+    
+    }
+    ul .links{
+    margin: 0 60px;
     text-decoration: none;
     color: #4CAF50;
-    padding: 10px 15px; /* Adjusted padding */
-}
-
-ul .links:hover {
+    padding: 10px 20px;
+    }
+    ul .links:hover{
     background-color: rgb(240, 236, 236);
     transition: background-color 0.6s ease;
     border-radius: 5px;
-}
-
-header h1 {
+    }
+    
+    header h1{
     background-color: #d9eed9;
     text-align: center;
-    margin-top: 0;
+    margin-top: 0px;
     padding: 20px;
-}
-
-h2 {
-    padding-left: 20px; /* Adjusted for smaller screens */
-}
-
-/* Section Styles */
-section {
+    }
+    section {
     display: flex;
-    flex-direction: column; /* Stack items vertically on small screens */
-    align-items: center; /* Center items */
-    padding: 10px;
+    justify-content: space-between;
+    align-content: center;
+    padding: 10px 10px;
     border: #f5f5f5;
-    margin: 10px;
-    max-width: 1200px; /* Max width */
-    margin: 0 auto; 
-}
-
-section:nth-child(even) {
+    margin:10px 10px;
+    align-content: center;
+    max-width: 1200px; /* Set the maximum width of the section container */
+    margin: 0 auto;
+    
+    }
+    
+    section:nth-child(even) {
     background-color: #f5f5f5;
-}
-
-/* Div Styles */
-div {
+    }
+    .price{
+    color: #57e3a4;
+    font-size: 25px;
+    }
+    footer{
+    background-color: #124314;
+    color: white;
+    align-items: center;
+    padding-left: 500px;
+    }
+    div{
     background-color: whitesmoke;
-    margin: 20px; /* Reduced margin */
+    margin-left: 20px;
+    margin-right: 10px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 1;
+    flex: 1; 
+    margin: 40px; 
     padding: 20px;
-    max-width: 300px; /* Limit width of each product box */
-}
-
-/* Price Styles */
-.price {
-    color: #57e3a4;
-    font-size: 25px;
-}
-
-/* Footer Styles */
-footer {
-    background-color: #124314;
-    color: white;
-    text-align: center; /* Center text */
-    padding: 20px; /* Adjusted padding */
-}
-
+    }
+    h2{
+    padding-left: 30px;
+    }
 /* Media Queries */
 @media (min-width: 600px) {
     section {
-        flex-direction: row; /* Change to row layout on larger screens */
+        flex-direction: row; /* Stack sections horizontally */
         justify-content: space-between; /* Space out items */
     }
 
     div {
-        margin: 20px; /* Increased margin for larger screens */
+        margin: 20px; /* Margin between product boxes */
     }
 
     ul .links {
